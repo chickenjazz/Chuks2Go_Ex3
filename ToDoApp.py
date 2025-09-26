@@ -1,23 +1,23 @@
 tasks = []
 
-def addTask():
+def add_task():
     while True:
-        newTask = input("Enter task: ")
+        new_task = input("Enter task: ")
 
-        if newTask.capitalize() in tasks: 
+        if new_task.capitalize() in tasks: 
             print("Task already exists.")
 
-        elif newTask.isdigit(): #Checks if the input is a number
+        elif new_task.isdigit(): #Checks if the input is a number
             print("Invalid Input.")
     
         else:
-            tasks.append(newTask.capitalize()) #Appends the "Task" if it is not a number or duplicate
+            tasks.append(new_task.capitalize()) #Appends the "Task" if it is not a number or duplicate
 
             print("Task added!")
             break
     print("---------------------------")
 
-def showTasks( ):
+def show_tasks( ):
     print("---------------------------")
     print("TASKS:")
 
@@ -29,15 +29,15 @@ def showTasks( ):
             print(i+1,".",tasks[i])
     print("---------------------------")        
 
-def removeTask(removeIndex):
-    if removeIndex < 1 or removeIndex > len(tasks):
+def remove_task(remove_index):
+    if remove_index < 1 or remove_index > len(tasks):
        print("Invalid Task Number")
 
     else:
-        removeIndex -= 1
-        taskToRemove = tasks[removeIndex]  #get the last removed task name
-        tasks.pop(removeIndex) 
-        print(f"Task \"{taskToRemove}\" has been removed!")
+        remove_index -= 1
+        task_to_remove = tasks[remove_index]  #get the last removed task name
+        tasks.pop(remove_index) 
+        print(f"Task \"{task_to_remove}\" has been removed!")
     print("---------------------------")
 
 def main():
@@ -52,15 +52,15 @@ def main():
         choice = input("Enter choice : ")
         if choice == "1":
 
-            addTask()
+            add_task()
 
         elif choice == "2":
-            showTasks()
+            show_tasks()
 
         elif choice == "3":
             try:
-                removeIndex = int(input("Enter Task No. to Remove: "))
-                removeTask(removeIndex)  
+                remove_index = int(input("Enter Task No. to Remove: "))
+                remove_task(remove_index)  
             except ValueError:
                 print("Invalid Input! Please enter a digit")
 
@@ -70,6 +70,6 @@ def main():
         else:
             print("Invalid Input! Please try again.")
 
-
+ 
 main()
 
