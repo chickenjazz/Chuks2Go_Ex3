@@ -41,7 +41,7 @@ def removeTask(removeIndex):
     print("---------------------------")
 
 def main():
-    while True: #TODO: improve user interface
+    while True:
         print("1. Add Task")
         print("2. Show Tasks")
         print("3. Remove Task")
