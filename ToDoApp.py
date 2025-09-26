@@ -58,14 +58,18 @@ def main():
             showTasks()
 
         elif choice == "3":
-            removeIndex = int(input("Enter Task No. to Remove: "))
-            removeTask(removeIndex)  
+            try:
+                removeIndex = int(input("Enter Task No. to Remove: "))
+                removeTask(removeIndex)  
+            except ValueError:
+                print("Invalid Input! Please enter a digit")
 
         elif choice == "4":
             break #this has a semi-colon which is not needed
         
         else:
-            print("Invalid Choice! Please try again.")
+            print("Invalid Input! Please try again.")
+
 
 main()
 
