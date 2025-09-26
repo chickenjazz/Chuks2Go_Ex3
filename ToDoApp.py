@@ -42,6 +42,8 @@ def removeTask(removeIndex):
 
 def main():
     while True:
+        print("\tMAIN MENU")
+        print("---------------------------")
         print("1. Add Task")
         print("2. Show Tasks")
         print("3. Remove Task")
@@ -63,7 +65,7 @@ def main():
             break #this has a semi-colon which is not needed
         
         else:
-            print("Wrong choice!!")
+            print("Invalid Choice! Please try again.")
 
 main()
 
