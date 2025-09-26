@@ -18,7 +18,7 @@ def removetask(tasknumber):
     print("task removed!!")
 
 def main():
-    while True:
+    while True: #TODO: improve user interface
         print("1 Add Task")
         print("2.Show Tasks")
         print("3.Remove Task")
@@ -29,7 +29,7 @@ def main():
             addtask(t)
         elif ch=="2":
             showTasks()
-        elif ch=="3":
+        elif ch=="3": #BUG: logical error here -- index mismatch (removes element at index n+1)
             n=int(input("enter task no to remove: "))
             removetask(n)   
         elif ch=="4":
