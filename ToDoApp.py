@@ -5,14 +5,14 @@ def addTask():
         new_task = input("Enter task: ")
 
         if new_task.capitalize() in tasks:
-            print("You already have that task")
+            print("Task already exists.")
 
         elif new_task.isdigit():
-            print("You cannot have a digit in here")
+            print("Invalid Input")
     
         else:
             tasks.append(new_task.capitalize())
-            print("task added!")
+            print("Task added!")
             break
 
 def showTasks( ):
@@ -40,8 +40,7 @@ def main():
 
         ch = input("enter choice : ")
         if ch=="1":
-            t = input("enter task : ")
-            addtask(t)
+            addTask()
 
         elif ch=="2":
             showTasks()
@@ -57,3 +56,4 @@ def main():
             print("wrong choice!!")
 
 main()
+
