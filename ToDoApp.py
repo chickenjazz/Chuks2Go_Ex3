@@ -23,17 +23,22 @@ def main():
         print("2.Show Tasks")
         print("3.Remove Task")
         print("4- Exit")
+
         ch = input("enter choice : ")
         if ch=="1":
             t = input("enter task : ")
             addtask(t)
+
         elif ch=="2":
             showTasks()
+
         elif ch=="3": #BUG: logical error here -- index mismatch (removes element at index n+1)
             n=int(input("enter task no to remove: "))
-            removetask(n)   
+            removetask(n)  
+
         elif ch=="4":
-            break;
+            break #this has a semi-colon which is not needed
+        
         else:
             print("wrong choice!!")
 main()
