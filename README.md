@@ -15,7 +15,7 @@ A simple command line application that allows users to manage their tasks effici
 #### 1. Clone or Download the Project
 
 ##### If using Git:
-git clone https://github.com/your-username/task-logging-system.git
+git clone https://github.com/chickenjazz/Chuks2Go_Ex3.git
 cd task-logging-system
 
 Or download the .zip file and extract it.
