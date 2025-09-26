@@ -1,10 +1,19 @@
-# toDoApp.py
+tasks = []
 
-tasks=[]
+def addTask():
+    while True:
+        new_task = input("Enter task: ")
 
-def addtask(task) :
-  tasks.append(task)
-  print("task added!")
+        if new_task.capitalize() in tasks:
+            print("You already have that task")
+
+        elif new_task.isdigit():
+            print("You cannot have a digit in here")
+    
+        else:
+            tasks.append(new_task.capitalize())
+            print("task added!")
+            break
 
 def showTasks( ):
     if len(tasks) == 0 :
@@ -46,5 +55,5 @@ def main():
         
         else:
             print("wrong choice!!")
+
 main()
-#commented
