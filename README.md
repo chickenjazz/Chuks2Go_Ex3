@@ -9,3 +9,34 @@ A simple command line application that allows users to manage their tasks effici
  - allows users to display all tasks that have been logged
 3. REMOVE TASKS
  - delete a task from the list by entering the number or string
+
+### SETUP INSTRUCTIONS
+
+#### 1. Clone or Download the Project
+
+##### If using Git:
+git clone https://github.com/your-username/task-logging-system.git
+cd task-logging-system
+
+Or download the .zip file and extract it.
+
+#### 2. Install Python
+Make sure you have Python 3.7 or higher installed.
+You can check by running:
+
+python --version
+
+#### 3. Run the Program
+
+Navigate to the project folder where toDoApp.py is located.
+Run the program with:
+
+python toDoApp.py
+
+#### 4. Using the App
+Follow the menu displayed in the terminal:
+
+Press 1 to add a task.
+Press 2 to show tasks.
+Press 3 to remove a task.
+Press 4 to exit.
