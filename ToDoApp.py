@@ -12,6 +12,7 @@ def addTask():
     
         else:
             tasks.append(newTask.capitalize()) #Appends the "Task" if it is not a number or duplicate
+
             print("Task added!")
             break
     print("---------------------------")
@@ -48,6 +49,7 @@ def main():
 
         choice = input("Enter choice : ")
         if choice == "1":
+
             addTask()
 
         elif choice == "2":
@@ -64,3 +66,4 @@ def main():
             print("Wrong choice!!")
 
 main()
+
